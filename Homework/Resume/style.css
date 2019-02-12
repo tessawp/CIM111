@@ -3,29 +3,39 @@
 @import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great');
 
 body{
-Background-color: white;
+Background-color: black;
 }
 
 h1{
 color: #99ebff;
   font-family: 'Fredericka the Great', cursive;
+  background-color: black;
 }
 
 h2{
+  background-color: black;
   font-family: 'Fredericka the Great', cursive;
+  color: white;
 }
 
 h3{
-background-color: rgb(255, 153, 0);
+background-color: black;
 font-family: 'Quicksand', sans serif;
+color: white;
 }
 
 p{
   font-family: 'Quicksand', sans serif;
+  color: white;
 }
 
 ul{
   font-family: 'Quicksand', sans serif;
+  color: white;
+}
+
+th{
+  color: white;
 }
 
 a{
@@ -41,11 +51,11 @@ background-color: #99ebff;
 
 .textlinks{
 font-size: 16px;
+color: orange;
+font-family: 'Quicksand', sans serif;
 }
 
-#moreProjects{
-color: orange;
-}
+
 
 #University{
 color: orange;
@@ -61,6 +71,10 @@ color: green;
 
 #Communication{
   color: orange;
+}
+
+#PersonalSummary{
+  color: #99ebff;
 }
 
 ul li{
