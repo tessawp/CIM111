@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display|Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great');
+
+body{
+Background-color: black;
+}
+
+h1{
+color: #99ebff;
+  font-family: 'Fredericka the Great', cursive;
+  background-color: black;
+}
+
+h2{
+  background-color: black;
+  font-family: 'Fredericka the Great', cursive;
+  color: white;
+}
+
+h3{
+background-color: black;
+font-family: 'Quicksand', sans serif;
+color: white;
+}
+
+p{
+  font-family: 'Quicksand', sans serif;
+  color: white;
+}
+
+ul{
+  font-family: 'Quicksand', sans serif;
+  color: white;
+}
+
+th{
+  color: white;
+}
+
+a{
+color: #ffb3ff;
+text-decoration: none;
+font-size: 24px;
+font-family: 'Fredericka the Great', cursive;
+}
+
+a:hover{
+background-color: #99ebff;
+}
+
+.textlinks{
+font-size: 16px;
+color: orange;
+font-family: 'Quicksand', sans serif;
+}
+
+.lists{
+  font-size: 18px;
+}
+
+
+
+#University{
+color: orange;
+}
+
+#Miami{
+color: green;
+}
+
+#School{
+  color: green;
+}
+
+#Communication{
+  color: orange;
+}
+
+#PersonalSummary{
+  color: #99ebff;
+}
+
+ul li{
+list-style: initial;
+}
+
+h3 b{
+color: pink;
+}
