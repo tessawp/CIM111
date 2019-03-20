@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css?family=Special+Elite');
+@import url('https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911');
+
+header{
+  width: 80%;
+  height: 100px;
+  background-color: white;
+  margin: 0 auto;
+  text-align: center;
+  font-family:'Special Elite', cursive;
+}
+
+footer{
+  width: 101%;
+  height: 100px;
+  background-color: white;
+  margin: 0 auto;
+  font-family:'Special Elite', cursive;
+}
+
+main{
+  width: 101%;
+  height: auto;
+  background-color: pink;
+  margin: 0 auto;
+  margin-left: -6px;
+  font-family: 'Goudy Bookletter 1911', serif;
+  font-size: 17px
+}
+
+#Rowing{
+  color: green;
+}
+
+
+
+#grid1{
+  display: grid;
+  /* <!-- using exact dimensions  -->
+  <!-- grid-template-rows: 300px; -->
+  <!-- grid-template-columns: 300px 300px 300px; --> */
+
+  grid-template-row: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+  padding: 10px;
+  grid-column-gap: 20px;
+  background-color: navy;
+  color: white;
+
+
+}
+
+#grid2{
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 20px;
+  padding: 10px;
+  grid-column-gap: 20px;
+  background-color: white;
+
+}
+
+#grid3{
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+  padding: 10px;
+  background-color: white;
+}
+
+#grid4{
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+  padding: 10px;
+  background-color: black;
+  color: white;
+}
+
+
+
+/*#sect1{
+  width: 250px;
+  height: auto;
+  margin: 0 auto;
+}
+
+#sect2{
+  width: 250px;
+  height: auto;
+}
+
+#sect3{
+  width: 250px;
+  height: auto;
+}
+
+#sect4{
+   width 250px;
+   height: auto;
+}
+
+*/
+
+.imageGallary{
+  width: 100%;
+  margin: 0 auto;
+}
+
+#boatImage{
+  width: 100%;
+  margin-top: 50px;
+}
+
+#boatImage2{
+  width: 100%;
+  margin-top: 30px;
+}
+
+#googleLink{
+  font-size: 10px;
+  margin-bottom: 40px;
+}
+
+#image{
+  width: 100%;
+  margin-top: 45px;
+}
+
+
+
+nav{
+  width: 500px;
+  height: 50px;
+  margin: 0 auto;
+
+}
+
+nav ul{
+  margin-left: -30px;
+}
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  /* width: 100px; */
+  text-align: center;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+nav ul li a{
+  text-decoration: none;
+
+}
+
+nav ul li a:hover{
+  background-color: pink;
+}
