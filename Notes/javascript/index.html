@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+
+    <meta charset="utf-8">
+
+    <title>intro to javascript</title>
+
+    <style>
+
+    </style>
+    <link rel="stylesheet" href="Style.css">
+
+  </head>
+
+  <body>
+    <h1>Chocolate Chip Cookies</h1>
+
+    <h2 id="click1">Ingredients</h1>
+
+      <ul id="hideInfo">
+        <li>1 cup butter (2 sticks - softened)</li>
+
+        <li>1 cup white sugar</li>
+
+        <li>1 cup brown sugar</li>
+
+        <li>3 cup all-purpose flour</li>
+
+        <li>2 large eggs</li>
+
+        <li>1 tsp vanilla essence</li>
+
+        <li>1/2 tsp baking powder</li>
+
+        <li>1 tsp baking soda</li>
+
+        <li>1 tsp salt</li>
+
+        <li>2 cup semi-sweet chocolate chips</li>
+    </ul>
+
+        <h3 id="click2">Hide</h3>
+
+
+
+     <h2 id="toggle">Method</h2>
+     <p id="toggleInfo">
+
+       Preheat oven to 375F°.
+        <br>
+       In one bowl, mix together all dry ingredients.
+        <br>
+       In a separate bowl, cream together butter and both sugars until combined.
+        <br>
+       Add in eggs and vanilla. Beat until light and fluffy.
+        <br>
+      Incorporate dry ingredients bit by bit, folding it in.
+        <br>
+      Add chocolate chips, mix well.
+        <br>
+      Roll dough into the size of roughly a quarter of your palm and place them on the baking sheet.
+        <br>
+      Bake in oven for around 10-11 minutes. For best, soft/chewy results, take out of oven when only JUST turning pale brown.
+        <br>
+      Leave cookies on baking sheet for 2 minutes and then carefully transfer to a cooling rack. </p>
+
+      <ul id="mouseOverOut">
+        <li id="Step1">Step 1</li>
+        <li id="Step2">Step 2</li>
+        <li id="Step3">Step 3</li>
+        <li id="Step4">Step 4</li>
+        <li id="Step5">Step 5</li>
+        <li id="Step6">Step 6</li>
+        <li id="Step7">Step 7</li>
+        <li id="Step8">Step 8</li>
+
+      </ul>
+
+      <div id="replaceText">Click each step to see pictures</div>
+
+     <!-- Step 1: Add jquery -->
+     <!-- Relative Link jquery -->
+      <script type="text/javascript" src="js/jquery.js"></script>
+     <!-- Absolute Link jquery -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script type="text/javascript">
+          $(document).ready(function(){
+            //All jquery code goes below
+
+             $("#hideInfo").hide(); // Hides id hideInfo
+             $("#toggleInfo").hide();
+
+             $("body").css("background-color", "white");
+
+             $("#click1").click(function(){
+               $("#hideInfo").show();
+             });// end of click1
+
+             $("#click2").click(function(){
+               $("#hideInfo").hide();
+             });
+
+
+              $("#toggle").click(function(){
+                $("#toggleInfo").toggle(1000);
+
+                });
+
+                $("#Step1").click(function(){
+                  $("#replaceText").html("<img src='images/IMG_5313.jpg' width='300'><p>Combine butter and sugars</p>");
+                });
+
+
+                $("#mouseOverOut").mouseenter(function(){
+               $("#mouseOverOut").css("background-color", "rgb(255, 252, 130)");
+            });
+
+
+            $("#mouseOverOut").mouseleave(function(){
+              $("#mouseOverOut").css("background-color", "")
+            });
+
+
+                $("#Step2").click(function(){
+                  $("#replaceText").html("<img src='images/IMG_5314.jpg' width='300'><p>Beat Mix</p>");
+                });
+
+                $("#Step3").click(function(){
+                  $("#replaceText").html("<img src='images/IMG_5315.jpg' width='300'><p>Add dry ingredients</p>");
+                });
+
+                $("#Step4").click(function(){
+                  $("#replaceText").html("<img src='images/IMG_5316.jpg' width='300'><p>Mix well</p>");
+                });
+
+                $("#Step5").click(function(){
+                  $("#replaceText").html("<img src='images/IMG_5317.jpg' width='300'><p>Add chocolate chips</p>");
+                });
+
+                $("#Step6").click(function(){
+                  $("#replaceText").html("<img src='images/IMG_5323.jpg' width='300'><p>Roll into balls</p>");
+                });
+
+                $("#Step7").click(function(){
+                  $("#replaceText").html("<img src='images/IMG_5320.jpg' width='300'><p>Bake for 10-11 minutes at 375F°</p>");
+                });
+
+                $("#Step8").click(function(){
+                  $("#replaceText").html("<img src='images/IMG_5322.jpg' width='300'><p>Place on cooling rack for 5 minutes</p>");
+                });
+
+
+
+
+
+
+            //End of jquery code
+
+          });
+      </script>
+
+
+
+
+
+  </body>
+
+
+
+</html>
