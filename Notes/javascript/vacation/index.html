@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Vacation</title>
+    <style>
+
+    </style>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+    <h1 id="responsive_headline">New <span id="Zealand">Zealand</span></h1>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script src="jquery.fittext.js"></script>
+  <script>
+    jQuery("#responsive_headline").fitText();
+  </script>
+
+
+  <div class="row">
+  <div class="column">
+   <img src="images/IMG_1738.jpg" width="300px">
+
+  <img src="images/IMG_1873.JPG" width="300px">
+
+  <img src="images/IMG_1673.JPG" width="300px">
+  </div>
+
+  <h2 id="responsive_headline">Introduction</h2>
+
+    <p id="responsive_headline">New Zealand; a place where it is socially acceptable to walk around barefoot, and where the sheep outnumber the
+    <br>
+    people 4:1. You may not think it's worth the thousands of dollars it costs to travel down to our little corner of the
+    <br>
+    planet, but you'll be sorely mistaken once you gaze upon the Alps of the South Island or the pristine beaches of the
+    <br>
+    North Island.
+    </p>
+
+    <h3 id="responsive_headline"><strong>Just a few of the things NZ has to offer...<strong></h3>
+
+<div>
+    <ul id="responsive_headline">
+      <li>Skydiving</li>
+      <li>Hiking</li>
+      <li>Bungee Jumping</li>
+      <li>Skiing/Snowboarding</li>
+      <li>Beautiful Cuisine</li>
+      <li>Luging</li>
+      <li>Scenic Drives</li>
+      <li>Extreme Jet Boating</li>
+      <li>Wine Tasting Tours</li>
+      <li>Friendly Wildlife</li>
+    </ul>
+</div>
+
+ 
+ <div class="column">
+
+   <img src="images/JJC01020.jpg" width="300px">
+
+   <img src="images/img_1874.jpg" width="300px">
+
+   <img src="images/ORG_JJC01157.JPG" width="300px">
+  </div>
+  </div>
+
+
+<script>
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+
+// Declare a "loop" variable
+var i;
+
+// Full-width images
+function one() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.flex = "100%";
+  }
+}
+
+// Two images side by side
+function two() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.flex = "50%";
+  }
+}
+
+// Four images side by side
+function four() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.flex = "25%";
+  }
+}
+</script>
+
+
+</body>
+
+
+
+</html>
