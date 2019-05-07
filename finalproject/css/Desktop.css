@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Monoton');
+@import url('https://fonts.googleapis.com/css?family=Allerta+Stencil');
 
 h1{
   display: block;
   margin: 0 auto;
   color: red;
+  font-family: 'Monoton', cursive;
+  font-size: 20px;
 }
+
 
 
 #responsive_headline{
@@ -15,10 +20,12 @@ h1{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  background-color: pink;
-  margin-top: 200px;
-  text-align: center;
+  background-color: white;
+  margin-top: 400px;
+  display: block;
+  margin: 0 auto 0 auto;
   color: white;
+  margin-bottom: 150px;
 
 }
 
@@ -27,10 +34,13 @@ h1{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  background-color: pink;
-  margin-top: 200px;
+  background-color: white;
+  margin-top: 500px;
   text-align: center;
+  display: block;
+  margin: 0 auto 0 auto;
   color: white;
+  margin-bottom: 500px;
 
 }
 
@@ -39,15 +49,19 @@ h1{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  background-color: pink;
-  margin-top: 200px;
+  background-color: white;
   text-align: center;
+  display: block;
+  margin: 0 auto 0 auto;
   color: white;
+  margin-top: 150px;
 }
+
+
 
 #page1{
   width: 100%;
-  height: 400px;
+  height: 200px;
   background-image: url("../Images/IMG_1483.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -59,38 +73,79 @@ h1{
 
 #page2{
   width: 100%;
-  height: 500px;
-  background-image: url("../Images/IMG_5491.jpg");
+  height: 200px;
+  background-image: url("../Images/IMG_5650.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
   padding-top: 160px;
+  margin-top: -75px;
 }
 
 #page3{
   width: 100%;
-  height: 500px;
+  height: 200px;
   background-image: url("../Images/IMG_5231.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
   padding-top: 150px;
-  
+  margin-top: -95px;
+}
+
+
+#section3{
+  display: block;
+  margin: 0 auto;
 }
 
 #page1text{
   color: white;
   font-size: 40px;
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
 #page2text{
   color: black;
   font-size: 40px;
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
 #page3text{
   color: white;
-  font-size: 40px;
+  font-size: 50px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+  margin-left: 80px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
 }
